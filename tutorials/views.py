@@ -33,7 +33,6 @@ def tutorial_list(request):
 
 @api_view(['GET', 'PUT', 'DELETE'])
 def tutorial_detail(request, pk):
-    # find tutorial by pk (id)
     try:
         tutorial = Tutorial.objects.get(pk=pk)
         if request.method == 'GET':

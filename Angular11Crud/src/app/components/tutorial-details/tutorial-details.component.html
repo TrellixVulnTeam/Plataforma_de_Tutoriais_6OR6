@@ -1,9 +1,9 @@
 <div>
   <div *ngIf="currentTutorial.id" class="edit-form">
-    <h4>Tutorial</h4>
+    <h3>Tutorial</h3>
     <form>
       <div class="form-group">
-        <label for="title">Title</label>
+        <label for="title">Titlo</label>
         <input
           type="text"
           class="form-control"
@@ -13,7 +13,7 @@
         />
       </div>
       <div class="form-group">
-        <label for="description">Description</label>
+        <label for="description">Descrição</label>
         <input
           type="text"
           class="form-control"
@@ -41,11 +41,11 @@
       class="badge badge-primary mr-2"
       (click)="updatePublished(true)"
     >
-      Publish
+      Publicar
     </button>
 
     <button class="badge badge-danger mr-2" (click)="deleteTutorial()">
-      Delete
+      Excluir
     </button>
 
     <button
@@ -53,9 +53,10 @@
       class="badge badge-success mb-2"
       (click)="updateTutorial()"
     >
-      Update
+      Atualizar
     </button>
     <p>{{ message }}</p>
+
   </div>
 
   <div *ngIf="!currentTutorial.id">

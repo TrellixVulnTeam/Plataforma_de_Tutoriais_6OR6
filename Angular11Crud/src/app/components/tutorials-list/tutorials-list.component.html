@@ -48,12 +48,12 @@
   </div>
   <div class="col-md-6">
     <div *ngIf="currentTutorial">
-      <h4>Tutorial</h4>
+      <h3>Tutorial</h3>
       <div>
-        <label><strong>Title:</strong></label> {{ currentTutorial.title }}
+        <label><strong>Títlo:</strong></label> {{ currentTutorial.title }}
       </div>
       <div>
-        <label><strong>Description:</strong></label>
+        <label><strong>Descrição:</strong></label>
         {{ currentTutorial.description }}
       </div>
       <div>
@@ -62,7 +62,7 @@
       </div>
 
       <a class="badge badge-warning" routerLink="/tutorials/{{ currentTutorial.id }}">
-        Edit
+        Editar
       </a>
     </div>
 
